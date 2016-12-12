@@ -76,8 +76,8 @@
       <file leaf-file-name="RunningMedianClean.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hw8/RunningMedianClean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
+            <state relative-caret-position="81">
+              <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -602,12 +602,12 @@
       <updated>1481445137567</updated>
       <workItem from="1481445140825" duration="11823000" />
       <workItem from="1481509886414" duration="1880000" />
-      <workItem from="1481521714405" duration="9337000" />
+      <workItem from="1481521714405" duration="9639000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23040000" />
+    <option name="totallyTimeSpent" value="23342000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1911" y="-9" width="1618" height="868" extended-state="6" />
@@ -673,7 +673,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/hw8/RunningMedianClean.java</url>
-          <line>43</line>
+          <line>39</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
@@ -944,8 +944,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hw8/RunningMedianClean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
+        <state relative-caret-position="81">
+          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

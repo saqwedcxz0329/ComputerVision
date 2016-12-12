@@ -16,13 +16,9 @@ public class RunningMedianClean extends Clean {
     public int[][] clearNoise(int[][] inputImg, List<Point> maskList, int theata) {
         int height = inputImg.length;
         int width = inputImg[0].length;
-        int windowHeight = 3;
-        int windowWidth = 3;
-        int edgeX = (int)Math.floor(windowHeight / 2);
-        int edgeY = (int)Math.floor(windowWidth / 2);
         int[][] outPutImg = ImageProcess.cloneImg(inputImg);
-        for (int i = edgeX; i < height - windowHeight; i++) {
-            for (int j = edgeY; j < width - windowWidth; j++) {
+        for (int i = 0; i < height; i++) {
+            for (int j = 0; j < width; j++) {
                 List<Integer> neiborhood = new ArrayList<>();
                 for (Point point : maskList) {
                     int neighborhoodValue = 0;
