@@ -1,22 +1,23 @@
-package cv;
+package Util;
 
 /**
  * Created by Selab on 2016/12/12.
  */
 public class Point {
-    private int x, y, value;
+    private int x, y;
+    private double value;
 
-    public Point(int x, int y, int value){
+    public Point(int x, int y, double value){
         this.x = x;
         this.y = y;
         this.value = value;
     }
 
-    public int getValue() {
+    public double getValue() {
         return value;
     }
 
-    public void setValue(int value) {
+    public void setValue(double value) {
         this.value = value;
     }
 
