@@ -1,14 +1,12 @@
 package hw9;
 
-import Util.Mask;
 import Util.Point;
-
-import java.util.InputMismatchException;
 import java.util.List;
 
 /**
  * Created by Louis on 2016/12/17.
  */
+
 public class EdgeDetection {
     public static int[][] operator(int[][] inputImg, List<List<Point>> maskList, String method) {
         int height = inputImg.length;

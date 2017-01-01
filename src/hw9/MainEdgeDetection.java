@@ -4,7 +4,6 @@ import Util.FileProcess;
 import Util.ImageProcess;
 import Util.Mask;
 import Util.Point;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -47,7 +46,7 @@ public class MainEdgeDetection {
         maskList.add(Mask.getFreiOne());
         maskList.add(Mask.getFreiTwo());
         outputImg =  EdgeDetection.operator(img, maskList, "one");
-        outputImg = ImageProcess.binaryImage(outputImg, 125);
+        outputImg = ImageProcess.binaryImage(outputImg, 100);
         FileProcess.outputImg(outputImg, "frei.bmp");
 
         System.out.println("Doing Kirsch edge detection...");
@@ -61,7 +60,7 @@ public class MainEdgeDetection {
         maskList.add(Mask.getKirschSix());
         maskList.add(Mask.getKirschSeven());
         outputImg =  EdgeDetection.operator(img, maskList, "two");
-        outputImg = ImageProcess.binaryImage(outputImg, 500);
+        outputImg = ImageProcess.binaryImage(outputImg, 350);
         FileProcess.outputImg(outputImg, "kirch.bmp");
 
         System.out.println("Doing Robinsion edge detection...");

@@ -518,4 +518,28 @@ public class Mask {
         maskList.add(new Point(0, 2, 100));
         return maskList;
     }
+
+    public static List<Point> getLaplacian(){
+        List<Point> maskList = new ArrayList<>();
+        maskList.add(new Point(-1, 0, 1));
+        maskList.add(new Point(0, -1, 1));
+        maskList.add(new Point(0, 1, 1));
+        maskList.add(new Point(1, 0, 1));
+        maskList.add(new Point(0, 0, -4));
+        return maskList;
+    }
+
+    public static List<Point> getMinimunVarianceLaplacian(){
+        List<Point> maskList = new ArrayList<>();
+        maskList.add(new Point(-1, -1, 2.0/3.0));
+        maskList.add(new Point(-1, 1, 2.0/3.0));
+        maskList.add(new Point(1, -1, 2.0/3.0));
+        maskList.add(new Point(1, 1, 2.0/3.0));
+        maskList.add(new Point(-1, 0, -1.0/3.0));
+        maskList.add(new Point(0, -1, -1.0/3.0));
+        maskList.add(new Point(0, 1, -1.0/3.0));
+        maskList.add(new Point(1, 0, -1.0/3.0));
+        maskList.add(new Point(0, 0, -4.0/3.0));
+        return maskList;
+    }
 }
