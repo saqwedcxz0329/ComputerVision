@@ -424,6 +424,7 @@ public class Mask {
         maskList.add(new Point(0, 2, -100));
         return maskList;
     }
+
     public static List<Point> getNevatiaNegativeSixty() {
         List<Point> maskList = new ArrayList<>();
         maskList.add(new Point(-2, -2, -100));
@@ -519,7 +520,7 @@ public class Mask {
         return maskList;
     }
 
-    public static List<Point> getLaplacian(){
+    public static List<Point> getLaplacian() {
         List<Point> maskList = new ArrayList<>();
         maskList.add(new Point(-1, 0, 1));
         maskList.add(new Point(0, -1, 1));
@@ -529,17 +530,158 @@ public class Mask {
         return maskList;
     }
 
-    public static List<Point> getMinimunVarianceLaplacian(){
+    public static List<Point> getMinimunVarianceLaplacian() {
         List<Point> maskList = new ArrayList<>();
-        maskList.add(new Point(-1, -1, 2.0/3.0));
-        maskList.add(new Point(-1, 1, 2.0/3.0));
-        maskList.add(new Point(1, -1, 2.0/3.0));
-        maskList.add(new Point(1, 1, 2.0/3.0));
-        maskList.add(new Point(-1, 0, -1.0/3.0));
-        maskList.add(new Point(0, -1, -1.0/3.0));
-        maskList.add(new Point(0, 1, -1.0/3.0));
-        maskList.add(new Point(1, 0, -1.0/3.0));
-        maskList.add(new Point(0, 0, -4.0/3.0));
+        maskList.add(new Point(-1, -1, 2.0 / 3.0));
+        maskList.add(new Point(-1, 1, 2.0 / 3.0));
+        maskList.add(new Point(1, -1, 2.0 / 3.0));
+        maskList.add(new Point(1, 1, 2.0 / 3.0));
+        maskList.add(new Point(-1, 0, -1.0 / 3.0));
+        maskList.add(new Point(0, -1, -1.0 / 3.0));
+        maskList.add(new Point(0, 1, -1.0 / 3.0));
+        maskList.add(new Point(1, 0, -1.0 / 3.0));
+        maskList.add(new Point(0, 0, -4.0 / 3.0));
         return maskList;
+    }
+
+    public static List<Point> getLOG() {
+        List<Point> maskList = new ArrayList<>();
+        maskList.add(new Point(-5, -2, -1));
+        maskList.add(new Point(-5, -1, -1));
+        maskList.add(new Point(-5, 0, -2));
+        maskList.add(new Point(-5, 1, -1));
+        maskList.add(new Point(-5, 2, -1));
+
+        maskList.add(new Point(5, -2, -1));
+        maskList.add(new Point(5, -1, -1));
+        maskList.add(new Point(5, 0, -2));
+        maskList.add(new Point(5, 1, -1));
+        maskList.add(new Point(5, 2, -1));
+
+        maskList.add(new Point(-4, -3, -2));
+        maskList.add(new Point(-4, -2, -4));
+        maskList.add(new Point(-4, -1, -8));
+        maskList.add(new Point(-4, 0, -9));
+        maskList.add(new Point(-4, 1, -8));
+        maskList.add(new Point(-4, 2, -4));
+        maskList.add(new Point(-4, 3, -2));
+
+        maskList.add(new Point(4, -3, -2));
+        maskList.add(new Point(4, -2, -4));
+        maskList.add(new Point(4, -1, -8));
+        maskList.add(new Point(4, 0, -9));
+        maskList.add(new Point(4, 1, -8));
+        maskList.add(new Point(4, 2, -4));
+        maskList.add(new Point(4, 3, -2));
+
+        maskList.add(new Point(-3, -4, -2));
+        maskList.add(new Point(-3, 4, -2));
+        maskList.add(new Point(-3, -3, -7));
+        maskList.add(new Point(-3, 3, -7));
+        maskList.add(new Point(-3, -2, -15));
+        maskList.add(new Point(-3, 2, -15));
+        maskList.add(new Point(-3, -1, -22));
+        maskList.add(new Point(-3, 1, -22));
+        maskList.add(new Point(-3, 0, -23));
+
+        maskList.add(new Point(3, -4, -2));
+        maskList.add(new Point(3, 4, -2));
+        maskList.add(new Point(3, -3, -7));
+        maskList.add(new Point(3, 3, -7));
+        maskList.add(new Point(3, -2, -15));
+        maskList.add(new Point(3, 2, -15));
+        maskList.add(new Point(3, -1, -22));
+        maskList.add(new Point(3, 1, -22));
+        maskList.add(new Point(3, 0, -23));
+
+        maskList.add(new Point(-2, -5, -1));
+        maskList.add(new Point(-2, 5, -1));
+        maskList.add(new Point(-2, -4, -4));
+        maskList.add(new Point(-2, 4, -4));
+        maskList.add(new Point(-2, -3, -15));
+        maskList.add(new Point(-2, 3, -15));
+        maskList.add(new Point(-2, -2, -24));
+        maskList.add(new Point(-2, 2, -24));
+        maskList.add(new Point(-2, -1, -14));
+        maskList.add(new Point(-2, 1, -14));
+        maskList.add(new Point(-2, 0, -1));
+
+        maskList.add(new Point(2, -5, -1));
+        maskList.add(new Point(2, 5, -1));
+        maskList.add(new Point(2, -4, -4));
+        maskList.add(new Point(2, 4, -4));
+        maskList.add(new Point(2, -3, -15));
+        maskList.add(new Point(2, 3, -15));
+        maskList.add(new Point(2, -2, -24));
+        maskList.add(new Point(2, 2, -24));
+        maskList.add(new Point(2, -1, -14));
+        maskList.add(new Point(2, 1, -14));
+        maskList.add(new Point(2, 0, -1));
+
+        maskList.add(new Point(-1, -5, -1));
+        maskList.add(new Point(-1, 5, -1));
+        maskList.add(new Point(-1, -4, -8));
+        maskList.add(new Point(-1, 4, -8));
+        maskList.add(new Point(-1, -3, -22));
+        maskList.add(new Point(-1, 3, -22));
+        maskList.add(new Point(-1, -2, -14));
+        maskList.add(new Point(-1, 2, -14));
+        maskList.add(new Point(-1, -1, 52));
+        maskList.add(new Point(-1, 1, 52));
+        maskList.add(new Point(-1, 0, 103));
+
+        maskList.add(new Point(1, -5, -1));
+        maskList.add(new Point(1, 5, -1));
+        maskList.add(new Point(1, -4, -8));
+        maskList.add(new Point(1, 4, -8));
+        maskList.add(new Point(1, -3, -22));
+        maskList.add(new Point(1, 3, -22));
+        maskList.add(new Point(1, -2, -14));
+        maskList.add(new Point(1, 2, -14));
+        maskList.add(new Point(1, -1, 52));
+        maskList.add(new Point(1, 1, 52));
+        maskList.add(new Point(1, 0, 103));
+
+        maskList.add(new Point(0, -5, -2));
+        maskList.add(new Point(0, 5, -2));
+        maskList.add(new Point(0, -4, -9));
+        maskList.add(new Point(0, 4, -9));
+        maskList.add(new Point(0, -3, -23));
+        maskList.add(new Point(0, 3, -23));
+        maskList.add(new Point(0, -2, -1));
+        maskList.add(new Point(0, 2, -1));
+        maskList.add(new Point(0, -1, 103));
+        maskList.add(new Point(0, 1, 103));
+        maskList.add(new Point(0, 0, 178));
+
+        return maskList;
+    }
+
+    public static List<Point> getDOG() {
+        List<Point> maskList = new ArrayList<>();
+        for (int i = -5; i <= 5; i++) {
+            for (int j = -5; j <= 5; j++) {
+//                double g = gaussion(i,j, 3, 1);
+                double g1 = gaussion(i, j, 1);
+                double g2 = gaussion(i, j, 3);
+                double g = g1 - g2;
+                maskList.add(new Point(i, j, g));
+            }
+        }
+        return maskList;
+    }
+
+    private static double gaussion(int x, int y, int sigma) {
+        double a1 = Math.exp(((x * x) + (y * y)) / (-2 * sigma * sigma));
+//        double a2 = (Math.sqrt(2 * Math.PI * sigma * sigma));
+        double a2 = 2 * Math.PI * sigma * sigma;
+        return a1 / a2;
+    }
+
+    private static double gaussion(int x, int y, int sigma1, int sigma2) {
+        double a1 = Math.exp(((x * x) + (y * y)) / (-2 * sigma1 * sigma1)) / sigma1;
+        double b1 = Math.exp(((x * x) + (y * y)) / (-2 * sigma2 * sigma2)) / sigma2;
+        double z = (Math.sqrt(2 * Math.PI));
+        return (a1 - b1) / z;
     }
 }

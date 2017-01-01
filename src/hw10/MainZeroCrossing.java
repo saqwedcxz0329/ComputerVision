@@ -30,5 +30,15 @@ public class MainZeroCrossing {
         outputImg = ZeroCrossingEdgeDection.operator(img, mask);
         outputImg = ImageProcess.binaryImage(outputImg, 20);
         FileProcess.outputImg(outputImg, "variance_lena.bmp");
+
+        mask = Mask.getLOG();
+        outputImg = ZeroCrossingEdgeDection.operator(img, mask);
+        outputImg = ImageProcess.binaryImage(outputImg, 3000);
+        FileProcess.outputImg(outputImg, "log_lena.bmp");
+
+        mask = Mask.getDOG();
+        outputImg = ZeroCrossingEdgeDection.operator(img, mask);
+        outputImg = ImageProcess.binaryImage(outputImg, 1);
+        FileProcess.outputImg(outputImg, "dog_lena.bmp");
     }
 }
