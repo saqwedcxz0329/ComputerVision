@@ -661,19 +661,19 @@ public class Mask {
         List<Point> maskList = new ArrayList<>();
         for (int i = -5; i <= 5; i++) {
             for (int j = -5; j <= 5; j++) {
-//                double g = gaussion(i,j, 3, 1);
                 double g1 = gaussion(i, j, 1);
                 double g2 = gaussion(i, j, 3);
                 double g = g1 - g2;
                 maskList.add(new Point(i, j, g));
+                System.out.print(g + " ");
             }
+            System.out.println();
         }
         return maskList;
     }
 
     private static double gaussion(int x, int y, int sigma) {
         double a1 = Math.exp(((x * x) + (y * y)) / (-2 * sigma * sigma));
-//        double a2 = (Math.sqrt(2 * Math.PI * sigma * sigma));
         double a2 = 2 * Math.PI * sigma * sigma;
         return a1 / a2;
     }
